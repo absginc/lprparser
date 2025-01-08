@@ -16,9 +16,10 @@ This project is for **educational purposes only**. The authors and contributors 
    - [Using Netcat for Manual Processing](#using-netcat-for-manual-processing)  
    - [Connecting Directly to the LPR](#connecting-directly-to-the-lpr)  
 3. [Example Output](#example-output)  
-4. [Accessing LPR Cameras](#accessing-lpr-cameras)  
-5. [Contribution and Feedback](#contribution-and-feedback)  
-6. [Bounty for Geolocation Assistance](#bounty-for-geolocation-assistance)  
+4. [Accessing LPR Cameras](#accessing-lpr-cameras)
+5. [Using search.py for LPR Detection](#using-searchpy-to-find-lpr)  
+6. [Contribution and Feedback](#contribution-and-feedback)  
+7. [Bounty for Geolocation Assistance](#bounty-for-geolocation-assistance)  
 
 ---
 
@@ -83,13 +84,14 @@ file_path = '/test/collectedcars.bin'  # Path to your collected data file
 output_folder = '/test/reads/'  # Folder to save processed images
 ```
 
-#### Activate Python Environment and Install Dependencies
+#### Activate a Python Environment and Install Dependencies
 
 ```bash
 python3 -m venv myenv
 source myenv/bin/activate  # On macOS/Linux
 myenv\Scripts\activate     # On Windows
 pip install chardet
+pip install requests       # if you'll use the search tool
 ```
 
 #### Run the Script
@@ -139,6 +141,39 @@ You will be prompted to enter the following:
 ```
 
 ---
+
+## **Using search.py to find LPR**
+
+The `search.py` script scans an IP range for Motorola LPR cameras by identifying a specific error response from their web interface.
+
+### **Prerequisites**
+
+Make sure you have the `requests` library installed:
+
+```bash
+pip install requests
+```
+
+### **How to Use**
+
+1. Run the script:
+   ```bash
+   python3 search.py
+   ```
+2. Enter the IP range to scan (e.g., `192.168.1.0/24`).
+3. Specify the number of threads for faster scanning (default is single-threaded).
+4. The script will attempt to connect to each IP in the range on port 8080 and log any devices that return the specific Motorola LPR response.
+
+**Example Output:**
+
+The script will save detected devices to `found_lpr_devices.txt` and display them in the console:
+
+```plaintext
+[FOUND] Motorola LPR detected at 192.168.1.45
+[FOUND] Motorola LPR detected at 192.168.1.78
+...
+[INFO] Found devices saved to 'found_lpr_devices.txt'.
+```
 
 ## **Example Output**
 

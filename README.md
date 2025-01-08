@@ -17,7 +17,7 @@ This project is for **educational purposes only**. The authors and contributors 
    - [Connecting Directly to the LPR](#connecting-directly-to-the-lpr)  
 3. [Example Output](#example-output)  
 4. [Accessing LPR Cameras](#accessing-lpr-cameras)
-5. [Using search.py for LPR Detection](#using-searchpy-to-find-lpr)  
+5. [Using search.py to locate LPRs over an IPV4 subnet](#using-searchpy-to-find-lpr)  
 6. [Contribution and Feedback](#contribution-and-feedback)  
 7. [Bounty for Geolocation Assistance](#bounty-for-geolocation-assistance)  
 

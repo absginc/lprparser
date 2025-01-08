@@ -122,8 +122,8 @@ python3 lpr_stream_processor.py
 ```
 
 You will be prompted to enter the following:  
-- **IP Address**: Default: `107.89.193.48`.  
-- **Port Number**: Default: `5003`.  
+- **IP Address**: Default: `1.2.3.4`.  
+- **Port Number**: Default: `5001`.  
 - **Output Folder for Images**: Default: `/test/plates`.  
 - **Output File for Records**: Default: `/test/plates.txt`.  
 

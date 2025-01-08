@@ -1,12 +1,12 @@
 # LPRPARSER
 
-## Educational - Experimental License Plate Reader (LPR) Data Processor
+## Motorola LPR License Plate reader Stream Processor and Scan Tool **Educational / Experimental** 
 
-LPRPARSER is an experimental project designed to process data collected from Motorola License Plate Readers (LPR). This tool demonstrates how to extract and process data streams, including license plates, vehicle makes, models, and associated images.
+This is Educational /  Experimental.  LPRPARSER is a research project that processes data collected from Motorola License Plate Readers (LPR). This tool demonstrates extracting and processing data streams, including license plates, vehicle makes, models, and associated images.
 
 ### **Disclaimer**
 
-This project is for **educational purposes only**. The authors and contributors are not responsible for any misuse or unauthorized use of this tool. Always ensure you comply with local laws and regulations when using any LPR-related technology.
+This project is for **educational purposes only**. The authors and contributors are not responsible for any misuse or unauthorized use of this tool. Always comply with local laws and regulations when using any LPR-related technology.
 
 ---
 
@@ -17,7 +17,7 @@ This project is for **educational purposes only**. The authors and contributors 
    - [Connecting Directly to the LPR](#connecting-directly-to-the-lpr)  
 3. [Example Output](#example-output)  
 4. [Accessing LPR Cameras](#accessing-lpr-cameras)
-5. [Using search.py to locate LPRs over an IPV4 subnet](#using-searchpy-to-find-lpr)  
+5. [SCAN TOOL - Using search.py to locate LPRs over an IPV4 subnet](#using-searchpy-to-find-lpr)  
 6. [Contribution and Feedback](#contribution-and-feedback)  
 7. [Bounty for Geolocation Assistance](#bounty-for-geolocation-assistance)  
 

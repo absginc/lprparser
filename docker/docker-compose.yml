@@ -1,0 +1,45 @@
+version: "3.9"
+services:
+  lprscan_166-146-0-0:
+    image: absgscott/motorola-lpr-scanner
+    container_name: lprscan_166-146-0-0
+    environment:
+      - IP_RANGE=166.146.0.0/16
+      - THREADS=35
+      - OUTPUT_FILE=/output/found-166.146.0.0.txt
+    volumes:
+      - /tmp/lprs:/output
+    restart: "no"
+
+  lprscan_166-145-0-0:
+    image: absgscott/motorola-lpr-scanner
+    container_name: lprscan_166-145-0-0
+    environment:
+      - IP_RANGE=166.145.0.0/16
+      - THREADS=35
+      - OUTPUT_FILE=/output/found-166.145.0.0.txt
+    volumes:
+      - /tmp/lprs:/output
+    restart: "no"
+
+  lprscan_166-144-0-0:
+    image: absgscott/motorola-lpr-scanner
+    container_name: lprscan_166-144-0-0
+    environment:
+      - IP_RANGE=166.144.0.0/16
+      - THREADS=35
+      - OUTPUT_FILE=/output/found-166.144.0.0.txt
+    volumes:
+      - /tmp/lprs:/output
+    restart: "no"
+
+  lprscan_166-143-0-0:
+    image: absgscott/motorola-lpr-scanner
+    container_name: lprscan_166-143-0-0
+    environment:
+      - IP_RANGE=166.143.0.0/16
+      - THREADS=35
+      - OUTPUT_FILE=/output/found-166.143.0.0.txt
+    volumes:
+      - /tmp/lprs:/output
+    restart: "no"
